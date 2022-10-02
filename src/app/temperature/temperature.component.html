@@ -1,0 +1,19 @@
+<p>temperature works!</p>
+<input
+  type="datetime-local"
+  placeholder="YYYY-MM-DD[T]HH:mm:ss"
+  class="date"
+  step="1"
+  [(ngModel)]="inputDate"
+  (ngModelChange)="onChangeDate($event)"
+/>
+
+<div style="width: 200px;">
+  <ag-grid-angular
+    style="width: 500px; height: 500px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+  >
+  </ag-grid-angular>
+</div>

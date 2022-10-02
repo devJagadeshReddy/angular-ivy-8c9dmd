@@ -1,0 +1,20 @@
+ul {
+  list-style-type: none;
+  display: inline-flex;
+  overflow: hidden;
+  background-color: black;
+  width: 97.5%;
+  li {
+      margin-right: 10px;
+      a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+  }
+  li a:hover {
+      background-color: #111;
+  }
+}
